@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page: Hiểu Rõ Về Tội Trốn Thuế (Điều 200 BLHS)</title>
+    <title>LegalInfo - Hiểu Rõ Về Tội Trốn Thuế</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -48,9 +48,6 @@
             background-image: linear-gradient(to right, #2563eb, #4f46e5);
             border-radius: 3px;
         }
-        .penalty-card {
-            border-left-width: 6px;
-        }
         .sticky-nav {
             backdrop-filter: blur(15px);
             background-color: rgba(255, 255, 255, 0.85);
@@ -63,7 +60,6 @@
             box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4), 0 4px 6px -4px rgba(79, 70, 229, 0.4);
             transform: translateY(-2px);
         }
-        
         /* Animation styles for scroll-reveal */
         .reveal-on-scroll {
             opacity: 0;
@@ -83,13 +79,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold text-gray-800">Legal<span class="text-blue-600">Info</span></a>
+                    <a href="index.html" class="text-2xl font-bold text-gray-800">Legal<span class="text-blue-600">Info</span></a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#acts" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Các Hành Vi</a>
-                        <a href="#penalties" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Khung Hình Phạt</a>
-                        <a href="#contact" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Tư Vấn</a>
+                        <a href="hanh-vi.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Các Hành Vi</a>
+                        <a href="hinh-phat.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Khung Hình Phạt</a>
+                        <a href="tu-van.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Tư Vấn</a>
                     </div>
                 </div>
             </div>
@@ -103,101 +99,41 @@
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight reveal-on-scroll">Hiểu Rõ Tội Trốn Thuế Để Bảo Vệ Tương Lai Của Bạn</h1>
                 <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-300 reveal-on-scroll" style="transition-delay: 150ms;">Toàn bộ thông tin chi tiết về Điều 200 Bộ luật Hình sự được trình bày một cách trực quan và dễ hiểu nhất.</p>
                 <div class="mt-8 reveal-on-scroll" style="transition-delay: 300ms;">
-                    <a href="#acts" class="inline-block btn-primary text-white font-bold rounded-lg px-8 py-3 text-base">Tìm Hiểu Ngay</a>
+                    <a href="#summary" class="inline-block btn-primary text-white font-bold rounded-lg px-8 py-3 text-base">Bắt Đầu Tìm Hiểu</a>
                 </div>
             </div>
         </section>
 
-        <!-- Section 1: Acts of Tax Evasion -->
-        <section id="acts" class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Summary Section -->
+        <section id="summary" class="py-20">
+             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="reveal-on-scroll">
-                    <h2 class="section-title">Các Hành Vi Cấu Thành Tội Trốn Thuế</h2>
-                    <p class="text-center text-lg text-gray-600 -mt-8 mb-12 max-w-3xl mx-auto">Chỉ một hành động thiếu hiểu biết cũng có thể dẫn đến hậu quả pháp lý nghiêm trọng. Dưới đây là các hành vi cần tránh:</p>
+                    <h2 class="section-title">Tổng Quan Về Tội Trốn Thuế</h2>
+                    <p class="text-center text-lg text-gray-600 -mt-8 mb-12 max-w-3xl mx-auto">Điều 200 BLHS quy định các hành vi gian dối nhằm trốn tránh nghĩa vụ nộp thuế và các chế tài xử phạt tương ứng.</p>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Cards will be dynamically revealed by JS -->
-                    <div class="card p-6 flex flex-col items-center text-center reveal-on-scroll">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Không Nộp/Nộp Trễ Hồ Sơ Thuế</h3>
-                        <p class="text-gray-600 text-sm">Không nộp hồ sơ đăng ký, khai thuế hoặc nộp sau 90 ngày kể từ ngày hết hạn.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                    <!-- Summary Card 1 -->
+                    <div class="card p-8 reveal-on-scroll">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Các Hành Vi Bị Cấm</h3>
+                        <p class="text-gray-600 mb-6">Bao gồm các hành vi như không nộp hồ sơ, không xuất hóa đơn, sử dụng chứng từ bất hợp pháp...</p>
+                        <a href="hanh-vi.html" class="font-semibold text-blue-600 hover:text-blue-800">Xem Chi Tiết &rarr;</a>
                     </div>
-                    <div class="card p-6 flex flex-col items-center text-center reveal-on-scroll">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Không Ghi Chép Sổ Sách</h3>
-                        <p class="text-gray-600 text-sm">Không ghi chép trong sổ kế toán các khoản thu liên quan để xác định số thuế phải nộp.</p>
+                    <!-- Summary Card 2 -->
+                    <div class="card p-8 reveal-on-scroll">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Khung Hình Phạt</h3>
+                        <p class="text-gray-600 mb-6">Mức phạt tiền có thể lên đến 4.5 tỷ đồng và phạt tù đến 7 năm đối với cá nhân.</p>
+                        <a href="hinh-phat.html" class="font-semibold text-blue-600 hover:text-blue-800">Xem Chi Tiết &rarr;</a>
                     </div>
-                    <div class="card p-6 flex flex-col items-center text-center reveal-on-scroll">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Gian Lận Hóa Đơn</h3>
-                        <p class="text-gray-600 text-sm">Không xuất hóa đơn hoặc ghi giá trị trên hóa đơn thấp hơn thực tế.</p>
-                    </div>
-                    <div class="card p-6 flex flex-col items-center text-center reveal-on-scroll">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Sử Dụng Chứng Từ Bất Hợp Pháp</h3>
-                        <p class="text-gray-600 text-sm">Sử dụng hóa đơn, chứng từ không hợp pháp để giảm số thuế phải nộp hoặc tăng số thuế được hoàn/khấu trừ.</p>
-                    </div>
-                    <div class="card p-6 flex flex-col items-center text-center reveal-on-scroll">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Khai Sai Hàng Hóa XNK</h3>
-                        <p class="text-gray-600 text-sm">Cố ý không kê khai, khai sai về thuế hoặc câu kết với người gửi hàng đối với hàng hóa xuất nhập khẩu.</p>
-                    </div>
-                    <div class="card p-6 flex flex-col items-center text-center reveal-on-scroll">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Sử Dụng Sai Mục Đích Hàng Miễn Thuế</h3>
-                        <p class="text-gray-600 text-sm">Sử dụng hàng miễn thuế, không chịu thuế không đúng mục đích mà không khai báo chuyển đổi.</p>
+                    <!-- Summary Card 3 -->
+                     <div class="card p-8 reveal-on-scroll">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Cần Hỗ Trợ Pháp Lý?</h3>
+                        <p class="text-gray-600 mb-6">Nếu bạn có thắc mắc hoặc cần tư vấn chuyên sâu, đừng ngần ngại liên hệ với các chuyên gia.</p>
+                        <a href="tu-van.html" class="font-semibold text-blue-600 hover:text-blue-800">Liên Hệ Ngay &rarr;</a>
                     </div>
                 </div>
-            </div>
+             </div>
         </section>
-
-        <!-- Section 2: Penalties -->
-        <section id="penalties" class="py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="reveal-on-scroll">
-                    <h2 class="section-title">Khung Hình Phạt Tương Ứng</h2>
-                    <p class="text-center text-lg text-gray-600 -mt-8 mb-12 max-w-3xl mx-auto">Hậu quả của việc trốn thuế được quy định rõ ràng và nghiêm khắc, áp dụng cho cả cá nhân và pháp nhân thương mại.</p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <!-- For Individuals -->
-                    <div class="space-y-8 reveal-on-scroll">
-                        <h3 class="text-2xl font-bold text-center text-gray-800">Đối Với Cá Nhân</h3>
-                        <div class="card p-6 penalty-card border-amber-400">
-                            <h4 class="text-xl font-bold text-amber-700 mb-2">Khung Cơ Bản (100tr - 300tr)</h4>
-                            <p>💰 Phạt tiền: 100 - 500 triệu đồng</p>
-                            <p>⚖️ Phạt tù: 03 tháng - 01 năm</p>
-                        </div>
-                        <div class="card p-6 penalty-card border-orange-500">
-                            <h4 class="text-xl font-bold text-orange-700 mb-2">Khung Tăng Nặng (300tr - 1tỷ)</h4>
-                            <p>💰 Phạt tiền: 500 triệu - 1.5 tỷ đồng</p>
-                            <p>⚖️ Phạt tù: 01 - 03 năm</p>
-                        </div>
-                        <div class="card p-6 penalty-card border-red-600">
-                            <h4 class="text-xl font-bold text-red-700 mb-2">Khung Rất Nghiêm Trọng (> 1tỷ)</h4>
-                            <p>💰 Phạt tiền: 1.5 tỷ - 4.5 tỷ đồng</p>
-                            <p>⚖️ Phạt tù: 02 - 07 năm</p>
-                        </div>
-                    </div>
-
-                    <!-- For Commercial Legal Entities -->
-                    <div class="space-y-8 reveal-on-scroll">
-                        <h3 class="text-2xl font-bold text-center text-gray-800">Đối Với Pháp Nhân Thương Mại</h3>
-                        <div class="card p-6 penalty-card border-cyan-400">
-                           <h4 class="text-xl font-bold text-cyan-700 mb-2">Khung Cơ Bản (200tr - 300tr)</h4>
-                           <p>💰 Phạt tiền: 300 triệu - 1 tỷ đồng</p>
-                        </div>
-                        <div class="card p-6 penalty-card border-blue-500">
-                            <h4 class="text-xl font-bold text-blue-700 mb-2">Khung Tăng Nặng</h4>
-                            <p>💰 Phạt tiền: 1 - 3 tỷ đồng</p>
-                        </div>
-                        <div class="card p-6 penalty-card border-indigo-600">
-                            <h4 class="text-xl font-bold text-indigo-700 mb-2">Khung Rất Nghiêm Trọng (> 1tỷ)</h4>
-                             <p>💰 Phạt tiền: 3 - 10 tỷ đồng</p>
-                             <p>⏳ Đình chỉ hoạt động: 06 tháng - 03 năm</p>
-                        </div>
-                        <div class="card p-6 penalty-card border-slate-700">
-                            <h4 class="text-xl font-bold text-slate-700 mb-2">Trường Hợp Đặc Biệt</h4>
-                             <p>❌ Đình chỉ hoạt động: Vĩnh viễn</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        
         <!-- CTA Section -->
         <section id="contact" class="bg-white">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
@@ -205,7 +141,7 @@
                     <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Đừng Mạo Hiểm Với Tương Lai Của Bạn</h2>
                     <p class="mt-4 text-lg text-gray-600">Hiểu biết pháp luật là cách bảo vệ tốt nhất. Nếu bạn có bất kỳ thắc mắc nào, hãy tìm đến sự tư vấn chuyên nghiệp.</p>
                     <div class="mt-8">
-                        <a href="#" class="inline-block btn-primary text-white font-bold rounded-lg px-8 py-3 text-base">Nhận Tư Vấn Ngay</a>
+                        <a href="tu-van.html" class="inline-block btn-primary text-white font-bold rounded-lg px-8 py-3 text-base">Nhận Tư Vấn Ngay</a>
                     </div>
                 </div>
             </div>
@@ -223,25 +159,15 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const revealElements = document.querySelectorAll('.reveal-on-scroll');
-
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry, index) => {
+                entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        // Add a staggered delay based on the element's index
-                        const delay = entry.target.style.transitionDelay ? 0 : (Array.from(revealElements).indexOf(entry.target) % 6) * 100;
-                        setTimeout(() => {
-                           entry.target.classList.add('is-visible');
-                        }, delay);
+                        entry.target.classList.add('is-visible');
                         observer.unobserve(entry.target);
                     }
                 });
-            }, {
-                threshold: 0.1
-            });
-
-            revealElements.forEach(element => {
-                observer.observe(element);
-            });
+            }, { threshold: 0.1 });
+            revealElements.forEach(element => observer.observe(element));
         });
     </script>
 </body>
