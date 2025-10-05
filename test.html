@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Tội Trốn Thuế (Điều 200 Bộ luật Hình sự)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid #e2e8f0;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        .icon-bg {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #1e3a8a; /* Dark Blue */
+            text-align: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3b82f6; /* Blue */
+        }
+        .penalty-card {
+            border-left: 5px solid;
+        }
+        /* Animation styles for click-to-reveal */
+        .reveal-on-click {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal-on-click.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Styles for letter animation */
+        .animate-letters > span {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(1em) rotate(5deg);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <header class="text-center mb-12 reveal-on-click">
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-900 animate-letters">Tội Trốn Thuế</h1>
+            <p class="text-xl text-gray-600 mt-2">Tổng quan Điều 200 Bộ luật Hình sự</p>
+        </header>
+
+        <!-- Section 1: Acts of Tax Evasion -->
+        <section class="mb-16">
+            <h2 class="section-title reveal-on-click animate-letters">Các Hành Vi Cấu Thành Tội Trốn Thuế</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="card p-6 flex flex-col items-center text-center reveal-on-click">
+                    <div class="icon-bg bg-red-100 text-red-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 animate-letters">Không Nộp/Nộp Trễ Hồ Sơ Thuế</h3>
+                    <p class="text-gray-600 text-sm">Không nộp hồ sơ đăng ký, khai thuế hoặc nộp sau 90 ngày kể từ ngày hết hạn.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card p-6 flex flex-col items-center text-center reveal-on-click">
+                    <div class="icon-bg bg-yellow-100 text-yellow-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v11.494m-9-5.747h18" /></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 animate-letters">Không Ghi Chép Sổ Sách</h3>
+                    <p class="text-gray-600 text-sm">Không ghi chép trong sổ kế toán các khoản thu liên quan để xác định số thuế phải nộp.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card p-6 flex flex-col items-center text-center reveal-on-click">
+                    <div class="icon-bg bg-green-100 text-green-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 animate-letters">Gian Lận Hóa Đơn</h3>
+                    <p class="text-gray-600 text-sm">Không xuất hóa đơn hoặc ghi giá trị trên hóa đơn thấp hơn thực tế.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="card p-6 flex flex-col items-center text-center reveal-on-click">
+                    <div class="icon-bg bg-blue-100 text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 animate-letters">Sử Dụng Chứng Từ Bất Hợp Pháp</h3>
+                    <p class="text-gray-600 text-sm">Sử dụng hóa đơn, chứng từ không hợp pháp để giảm số thuế phải nộp hoặc tăng số thuế được hoàn/khấu trừ.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="card p-6 flex flex-col items-center text-center reveal-on-click">
+                    <div class="icon-bg bg-purple-100 text-purple-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 animate-letters">Khai Sai Hàng Hóa XNK</h3>
+                    <p class="text-gray-600 text-sm">Cố ý không kê khai, khai sai về thuế hoặc câu kết với người gửi hàng đối với hàng hóa xuất nhập khẩu.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="card p-6 flex flex-col items-center text-center reveal-on-click">
+                    <div class="icon-bg bg-indigo-100 text-indigo-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.24a2 2 0 00-1.806.547a2 2 0 00-.547 1.806l.477 2.387a6 6 0 00.517 3.86l.158.318a6 6 0 00.517 3.86l2.387.477a2 2 0 001.806-.547a2 2 0 00.547-1.806l-.477-2.387a6 6 0 00-.517-3.86l-.158-.318a6 6 0 00-.517-3.86zM15 12a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2 animate-letters">Sử Dụng Sai Mục Đích Hàng Miễn Thuế</h3>
+                    <p class="text-gray-600 text-sm">Sử dụng hàng miễn thuế, không chịu thuế không đúng mục đích mà không khai báo chuyển đổi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Penalties -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- For Individuals -->
+            <section>
+                <h2 class="section-title reveal-on-click animate-letters">Đối Với Cá Nhân</h2>
+                <div class="space-y-6">
+                    <!-- Penalty 1 -->
+                    <div class="card p-6 penalty-card border-yellow-400 reveal-on-click">
+                        <h3 class="text-xl font-bold text-yellow-700 mb-2 animate-letters">Khung Cơ Bản</h3>
+                        <p class="font-semibold text-gray-700">Trốn thuế từ 100tr - dưới 300tr</p>
+                        <p class="text-gray-500 text-sm mb-4">(hoặc dưới 100tr nhưng đã có tiền án, tiền sự)</p>
+                        <div class="mt-4 space-y-2">
+                            <p class="flex items-center"><span class="font-bold text-yellow-800 mr-2">💰 Phạt tiền:</span> 100 - 500 triệu đồng</p>
+                            <p class="flex items-center"><span class="font-bold text-yellow-800 mr-2">⚖️ Phạt tù:</span> 03 tháng - 01 năm</p>
+                        </div>
+                    </div>
+                    <!-- Penalty 2 -->
+                    <div class="card p-6 penalty-card border-orange-400 reveal-on-click">
+                        <h3 class="text-xl font-bold text-orange-700 mb-2 animate-letters">Khung Tăng Nặng</h3>
+                        <p class="font-semibold text-gray-700">Trốn thuế từ 300tr - dưới 1 tỷ</p>
+                        <p class="text-gray-500 text-sm mb-4">(hoặc có tình tiết tăng nặng: có tổ chức, lợi dụng chức vụ, tái phạm...)</p>
+                         <div class="mt-4 space-y-2">
+                            <p class="flex items-center"><span class="font-bold text-orange-800 mr-2">💰 Phạt tiền:</span> 500 triệu - 1.5 tỷ đồng</p>
+                            <p class="flex items-center"><span class="font-bold text-orange-800 mr-2">⚖️ Phạt tù:</span> 01 - 03 năm</p>
+                        </div>
+                    </div>
+                    <!-- Penalty 3 -->
+                    <div class="card p-6 penalty-card border-red-500 reveal-on-click">
+                        <h3 class="text-xl font-bold text-red-700 mb-2 animate-letters">Khung Rất Nghiêm Trọng</h3>
+                        <p class="font-semibold text-gray-700">Trốn thuế từ 1 tỷ đồng trở lên</p>
+                         <div class="mt-4 space-y-2">
+                            <p class="flex items-center"><span class="font-bold text-red-800 mr-2">💰 Phạt tiền:</span> 1.5 tỷ - 4.5 tỷ đồng</p>
+                            <p class="flex items-center"><span class="font-bold text-red-800 mr-2">⚖️ Phạt tù:</span> 02 - 07 năm</p>
+                        </div>
+                    </div>
+                     <!-- Additional Penalty -->
+                    <div class="card p-6 bg-gray-100 border-l-4 border-gray-400 reveal-on-click">
+                         <h3 class="text-lg font-bold text-gray-700 animate-letters">Hình Phạt Bổ Sung</h3>
+                         <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                            <li>Phạt tiền từ 20 - 100 triệu đồng.</li>
+                            <li>Cấm đảm nhiệm chức vụ, hành nghề từ 01 - 05 năm.</li>
+                            <li>Tịch thu một phần hoặc toàn bộ tài sản.</li>
+                         </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- For Commercial Legal Entities -->
+            <section>
+                <h2 class="section-title reveal-on-click animate-letters">Đối Với Pháp Nhân Thương Mại</h2>
+                 <div class="space-y-6">
+                    <!-- Penalty 1 -->
+                    <div class="card p-6 penalty-card border-sky-400 reveal-on-click">
+                        <h3 class="text-xl font-bold text-sky-700 mb-2 animate-letters">Khung Cơ Bản</h3>
+                        <p class="font-semibold text-gray-700">Trốn thuế từ 200tr - dưới 300tr</p>
+                        <p class="text-gray-500 text-sm mb-4">(hoặc từ 100tr - dưới 200tr nhưng đã có tiền án, tiền sự)</p>
+                        <div class="mt-4">
+                           <p class="flex items-center"><span class="font-bold text-sky-800 mr-2">💰 Phạt tiền:</span> 300 triệu - 1 tỷ đồng</p>
+                        </div>
+                    </div>
+                    <!-- Penalty 2 -->
+                    <div class="card p-6 penalty-card border-blue-500 reveal-on-click">
+                        <h3 class="text-xl font-bold text-blue-700 mb-2 animate-letters">Khung Tăng Nặng</h3>
+                        <p class="font-semibold text-gray-700 mb-4">Phạm tội thuộc các trường hợp tăng nặng tương tự cá nhân.</p>
+                         <div class="mt-4">
+                            <p class="flex items-center"><span class="font-bold text-blue-800 mr-2">💰 Phạt tiền:</span> 1 - 3 tỷ đồng</p>
+                        </div>
+                    </div>
+                    <!-- Penalty 3 -->
+                    <div class="card p-6 penalty-card border-indigo-500 reveal-on-click">
+                        <h3 class="text-xl font-bold text-indigo-700 mb-2 animate-letters">Khung Rất Nghiêm Trọng</h3>
+                        <p class="font-semibold text-gray-700">Trốn thuế từ 1 tỷ đồng trở lên</p>
+                         <div class="mt-4 space-y-2">
+                            <p class="flex items-center"><span class="font-bold text-indigo-800 mr-2">💰 Phạt tiền:</span> 3 - 10 tỷ đồng</p>
+                            <p class="flex items-center"><span class="font-bold text-indigo-800 mr-2">⏳ Đình chỉ hoạt động:</span> 06 tháng - 03 năm</p>
+                        </div>
+                    </div>
+                     <!-- Penalty 4 -->
+                    <div class="card p-6 penalty-card border-slate-600 reveal-on-click">
+                        <h3 class="text-xl font-bold text-slate-700 mb-2 animate-letters">Trường Hợp Đặc Biệt (Điều 79)</h3>
+                        <p class="font-semibold text-gray-700">Gây hậu quả đặc biệt nghiêm trọng không thể khắc phục.</p>
+                         <div class="mt-4">
+                            <p class="flex items-center"><span class="font-bold text-slate-800 mr-2">❌ Đình chỉ hoạt động:</span> Vĩnh viễn</p>
+                        </div>
+                    </div>
+                    <!-- Additional Penalty -->
+                    <div class="card p-6 bg-gray-100 border-l-4 border-gray-400 reveal-on-click">
+                         <h3 class="text-lg font-bold text-gray-700 animate-letters">Hình Phạt Bổ Sung</h3>
+                         <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                            <li>Phạt tiền từ 50 - 200 triệu đồng.</li>
+                            <li>Cấm kinh doanh, hoạt động, huy động vốn từ 01 - 03 năm.</li>
+                         </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Prepare elements that have letter animations
+            const elementsToAnimateLetters = document.querySelectorAll('.animate-letters');
+            elementsToAnimateLetters.forEach(element => {
+                const text = element.textContent;
+                element.innerHTML = ''; // Clear original text to replace with spans
+                text.split('').forEach(char => {
+                    const span = document.createElement('span');
+                    span.textContent = char;
+                    // Handle spaces to maintain layout, as empty spans collapse
+                    if (char.trim() === '') {
+                        span.innerHTML = '&nbsp;';
+                    }
+                    element.appendChild(span);
+                });
+            });
+
+            // 2. Get all elements that should be revealed on click
+            const elementsToReveal = document.querySelectorAll('.reveal-on-click');
+            let revealIndex = 0;
+
+            // 3. Set up the click listener for the whole window
+            window.addEventListener('click', () => {
+                if (revealIndex < elementsToReveal.length) {
+                    const element = elementsToReveal[revealIndex];
+                    element.classList.add('is-visible');
+
+                    // Find any letter-animated text inside the newly visible element and trigger it
+                    const letterSpans = element.querySelectorAll('.animate-letters span');
+                    letterSpans.forEach((span, index) => {
+                        // Stagger the animation of each letter with a transition delay
+                        span.style.transitionDelay = `${index * 40}ms`;
+                        span.style.opacity = '1';
+                        span.style.transform = 'translateY(0) rotate(0deg)';
+                    });
+
+                    revealIndex++;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
